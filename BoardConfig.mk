@@ -16,9 +16,15 @@ include device/sony/shinano/BoardConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := D5803
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := D5803,D5833,z3c,aries
+
 #Reserve space for data encryption (12656259072-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688
 
 BOARD_KERNEL_CMDLINE += coherent_pool=8M mem=1920M
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/aries/kernel-headers
+
+# TWRP
+DEVICE_RESOLUTION := 720x1280

@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_d5803-userdebug
+add_lunch_combo aosp_aries-userdebug
+add_lunch_combo omni_aries-userdebug
