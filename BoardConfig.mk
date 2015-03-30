@@ -24,6 +24,3 @@ BOARD_KERNEL_CMDLINE += coherent_pool=8M mem=1920M
 BUILD_KERNEL := true
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/aries/kernel-headers
-
-# TWRP flags
-DEVICE_RESOLUTION := 720x1280
