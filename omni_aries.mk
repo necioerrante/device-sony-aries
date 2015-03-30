@@ -22,6 +22,9 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 # Inherit Omni product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+DEVICE_PACKAGE_OVERLAYS += \
+    device/sony/aries/overlay
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product-if-exists, device/sony/shinano/device.mk)
@@ -76,10 +79,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_NAME := omni_aries
 PRODUCT_DEVICE := aries
-PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia z3c
-PRODUCT_LOCALES += xhdpi hdpi
+PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
+
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320
