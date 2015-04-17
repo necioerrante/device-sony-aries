@@ -13,7 +13,6 @@
 # limitations under the License.
 
 TARGET_KERNEL_CONFIG := aosp_shinano_aries_defconfig
-#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 
 # Inherit Omni GSM telephony parts
