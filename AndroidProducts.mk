@@ -13,6 +13,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_aries.mk 
-
-
+    $(LOCAL_DIR)/omni_aries.mk
