@@ -1,0 +1,81 @@
+[
+  {
+    "remote":       "ne",
+    "repository":   "device-sony-common",
+    "target_path":  "device/sony/common",
+    "revision":     "dum"
+  },
+  {
+    "remote":       "ne",
+    "repository":   "device-sony-shinano",
+    "target_path":  "device/sony/shinano",
+    "revision":     "dum"
+  },
+  {
+    "remote":       "sony",
+    "repository":   "thermanager",
+    "target_path":  "vendor/sony/system/thermanager",
+    "revision":     "master"
+  },
+  {
+    "remote":       "sony",
+    "repository":   "mkqcdtbootimg",
+    "target_path":  "vendor/sony/system/mkqcdtbootimg",
+    "revision":     "master"
+  },
+  {
+    "remote":       "sony",
+    "repository":   "macaddrsetup",
+    "target_path":  "vendor/sony/system/macaddrsetup",
+    "revision":     "master"
+  },
+  {
+    "remote":       "sony",
+    "repository":   "timekeep",
+    "target_path":  "vendor/sony/system/timekeep",
+    "revision":     "master"
+  },
+  {
+    "remote":       "sony",
+    "repository":   "device-qcom-sepolicy",
+    "target_path":  "device/qcom/sepolicy",
+    "revision":     "master"
+  },
+  {
+    "remote":       "sony",
+    "repository":   "vendor-qcom-opensource-dataservices",
+    "target_path":  "vendor/qcom/opensource/dataservices",
+    "revision":     "master"
+  },
+  {
+    "remote":       "sony",
+    "repository":   "kernel",
+    "target_path":  "kernel/sony/msm",
+    "revision":     "aosp/LA.BF64.1.2.2_rb4.7"
+  },
+  {
+    "remote":       "sony",
+    "repository":   "camera",
+    "target_path":  "hardware/qcom/camera",
+    "revision":     "aosp/LA.BF64.1.2.2_rb4.7"
+  },
+  {
+    "remote":       "ne",
+    "repository":   "aosp-vendor-sony",
+    "target_path":  "vendor/sony",
+    "revision":     "m"
+  },
+  {
+    "remote":       "ne",
+    "repository":   "aosp-vendor-qcom",
+    "target_path":  "vendor/qcom",
+    "revision":     "m"
+  },
+  {
+    "remote":       "ne",
+    "repository":   "aosp-vendor-qcom-proprietary",
+    "target_path":  "vendor/qcom/proprietary",
+    "revision":     "ne"
+  }
+]
+ 

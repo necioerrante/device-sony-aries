@@ -14,6 +14,7 @@
 
 include device/sony/shinano/BoardConfig.mk
 include device/sony/common/CommonConfig.mk
+include device/sony/common/CommonConfigDU.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := D5803
 
