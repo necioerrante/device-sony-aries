@@ -12,6 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_d5803.mk \
-    $(LOCAL_DIR)/du.mk
+
+# TWRP
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+TW_THEME := portrait_hdpi
+
+# Inherit AOSP Aries device parts
+$(call inherit-product, device/sony/aries/aosp_d5803.mk)
+
+# Inherit DU product configuration
+$(call inherit-product, device/sony/common/radio.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
+
+# Inherit DU Enhanced NFC
+$(call inherit-product, vendor/du/config/nfc_enhanced.mk)
+
+# Override Product Name for DU
+PRODUCT_NAME := du_aries
+PRODUCT_MODEL := Xperia z3c
